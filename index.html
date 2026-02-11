@@ -19,7 +19,7 @@
 <body>
 
     <!-- ================= NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-light    ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <!-- LOGO IMAGE -->
@@ -57,9 +57,10 @@
                     </p>
 
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary me-3 py-3 px-5">Get a Quote</a>
-                        <a href="#services" class="btn btn-outline-light py-3 px-5">View Services</a>
+                        <a href="#contact" class="btn btn-primary hero-btn">I'm Interested</a>
+                        <a href="#services" class="btn btn-outline-light hero-btn">View Services</a>
                     </div>
+
                 </div>
 
 
@@ -152,6 +153,11 @@
         </div>
     </section>
 
+
+
+
+
+
     <!-- ================= SERVICES SECTION ================= -->
     <section id="services" class="services-section">
         <div class="container">
@@ -167,185 +173,218 @@
 
 
 
-            <div class="row g-4 justify-content-center mb-5">
-                <div class="text-center" style="color: #14b8a6; text-decoration: underline;">
-                    <h5 class="service-category-title"><i>Data Plans</i></h5>
+            <!-- ================= DATA PLANS ================= -->
+            <div class="data-plans-wrapper">
+
+                <div class="text-center mb-2">
+                    <span class="service-category-eyebrow">Connectivity Solutions</span>
+                    <h4 class="service-category-title">Data Plans</h4>
+                    <p class="service-category-desc">
+                        Flexible, affordable, and high-speed internet packages designed
+                        for individuals, professionals, and growing businesses.
+                        No long-term contracts. Plug-and-play connectivity.
+                    </p>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="pricing-card">
-                        <h6>On The Go</h6>
-                        <p>40GB + 40GB</p>
-                        <strong>R210</strong>
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-md-3">
+                        <div class="pricing-card">
+                            <i class="bi bi-wifi"></i>
+                            <h6>On The Go</h6>
+                            <p>40GB + 40GB</p>
+                            <strong>R210</strong>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-3">
-                    <div class="pricing-card">
-                        <h6>Connecter</h6>
-                        <p>120GB + 120GB</p>
-                        <strong>R350</strong>
+                    <div class="col-md-3">
+                        <div class="pricing-card">
+                            <i class="bi bi-lightning-charge"></i>
+                            <h6>Connecter</h6>
+                            <p>120GB + 120GB</p>
+                            <strong>R350</strong>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-3">
-                    <div class="pricing-card featured">
-                        <h6>Booster</h6>
-                        <p>180GB + 180GB</p>
-                        <strong>R450</strong>
+                    <div class="col-md-3">
+                        <div class="pricing-card featured">
+                            <span class="popular-badge">Most Popular</span>
+                            <i class="bi bi-rocket-takeoff"></i>
+                            <h6>Booster</h6>
+                            <p>180GB + 180GB</p>
+                            <strong>R450</strong>
+                        </div>
                     </div>
+
+                    <div class="col-md-3">
+                        <div class="pricing-card">
+                            <i class="bi bi-house-door"></i>
+                            <h6>FamPro</h6>
+                            <p>Unlimited 10Mbps</p>
+                            <strong>R550</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ================= ADHOC SERVICES ================= -->
+            <div class="adhoc-services-wrapper mt-1">
+
+                <div class="text-center mb-5">
+                    <h3 class="service-category-eyebrow" style="font-size: 16px !important;">Professional Solutions</h3>
+                    <!-- <h4 class="service-category-title">AdHoc Services</h4> -->
+                    <p class="service-category-desc">
+                        Custom technology and business services tailored to your
+                        operational needs and project requirements.
+                    </p>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="pricing-card">
-                        <h6>FamPro</h6>
-                        <p>Unlimited 10Mbps</p>
-                        <strong>R550</strong>
+                <div class="row g-4">
+                    <!-- SERVICE 1 -->
+                    <div class="col-lg-4">
+                        <div class="service-card-v2">
+                            <div class="service-image">
+                                <!-- replace image later -->
+                                <img src="images/web-solutions.png" alt="Web Solutions">
+                            </div>
+
+                            <div class="service-content">
+                                <h5>Web Solutions</h5>
+                                <p>
+                                    We design and build modern, high-performance websites and
+                                    web applications tailored to your business needs.
+                                </p>
+
+                                <ul class="service-list">
+                                    <li>Websites & Landing Pages</li>
+                                    <li>Custom Web Applications</li>
+                                    <li>Website Maintenance & Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 2 -->
+                    <div class="col-lg-4">
+                        <div class="service-card-v2">
+                            <div class="service-image">
+                                <img src="images/data-analytics-2.png" alt="Data Analytics">
+                            </div>
+
+                            <div class="service-content">
+                                <h5>Data Analytics</h5>
+                                <p>
+                                    Transform raw data into actionable insights using structured
+                                    databases, analytics, and visual dashboards.
+                                </p>
+
+                                <ul class="service-list">
+                                    <li>Database Creation & Management</li>
+                                    <li>Data Mining & Analysis</li>
+                                    <li>Interactive Dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 3 -->
+                    <div class="col-lg-4">
+                        <div class="service-card-v2">
+                            <div class="service-image">
+                                <img src="images/service-admin.png" alt="Admin and Design">
+                            </div>
+
+                            <div class="service-content">
+                                <h5>Admin & Design</h5>
+                                <p>
+                                    Professional business support services that streamline
+                                    operations and strengthen brand presence.
+                                </p>
+
+                                <ul class="service-list">
+                                    <li>Logo & Poster Design</li>
+                                    <li>Quotations & Invoices</li>
+                                    <li>Business Admin Support</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="row g-4 mt-3">
-                <div class="text-center" style="color: #14b8a6; text-decoration: underline;">
-                    <h5 class="service-category-title"><i>AdHoc Services</i></h5>
-                </div>
-                <!-- SERVICE 1 -->
-                <div class="col-lg-4">
-                    <div class="service-card-v2">
-                        <div class="service-image">
-                            <!-- replace image later -->
-                            <img src="images/web-solutions.png" alt="Web Solutions">
-                        </div>
-
-                        <div class="service-content">
-                            <h5>Web Solutions</h5>
-                            <p>
-                                We design and build modern, high-performance websites and
-                                web applications tailored to your business needs.
-                            </p>
-
-                            <ul class="service-list">
-                                <li>Websites & Landing Pages</li>
-                                <li>Custom Web Applications</li>
-                                <li>Website Maintenance & Support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SERVICE 2 -->
-                <div class="col-lg-4">
-                    <div class="service-card-v2">
-                        <div class="service-image">
-                            <img src="images/data-analytics.png" alt="Data Analytics">
-                        </div>
-
-                        <div class="service-content">
-                            <h5>Data Analytics</h5>
-                            <p>
-                                Transform raw data into actionable insights using structured
-                                databases, analytics, and visual dashboards.
-                            </p>
-
-                            <ul class="service-list">
-                                <li>Database Creation & Management</li>
-                                <li>Data Mining & Analysis</li>
-                                <li>Interactive Dashboards</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SERVICE 3 -->
-                <div class="col-lg-4">
-                    <div class="service-card-v2">
-                        <div class="service-image">
-                            <img src="images/service-admin.png" alt="Admin and Design">
-                        </div>
-
-                        <div class="service-content">
-                            <h5>Admin & Design</h5>
-                            <p>
-                                Professional business support services that streamline
-                                operations and strengthen brand presence.
-                            </p>
-
-                            <ul class="service-list">
-                                <li>Logo & Poster Design</li>
-                                <li>Quotations & Invoices</li>
-                                <li>Business Admin Support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </section>
 
 
-    <!-- ================= DATA SOLUTIONS ================= -->
-    <!-- <section class="data-section">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Data Solutions</h2>
-
-            <div class="row g-4 justify-content-center">
-
-                <div class="col-md-3">
-                    <div class="pricing-card">
-                        <h6>On The Go</h6>
-                        <p>40GB + 40GB</p>
-                        <strong>R210</strong>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="pricing-card">
-                        <h6>Connecter</h6>
-                        <p>120GB + 120GB</p>
-                        <strong>R350</strong>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="pricing-card featured">
-                        <h6>Booster</h6>
-                        <p>180GB + 180GB</p>
-                        <strong>R450</strong>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="pricing-card">
-                        <h6>FamPro</h6>
-                        <p>Unlimited 10Mbps</p>
-                        <strong>R550</strong>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
     <!-- ================= CONTACT SECTION ================= -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="row">
 
+            <div class="text-center mb-lg-5 mb-1">
+                <span class="service-eyebrow text-white">Let’s Connect</span>
+                <h2 class="section-title text-white">Get In Touch</h2>
+                <p class="contact-subtitle">
+                    Have a question about our services or data plans?
+                    Our team is ready to assist you.
+                </p>
+            </div>
+
+            <div class="row align-items-start">
+
+                <!-- LEFT SIDE -->
                 <div class="col-lg-6 mb-4">
-                    <h2 class="section-title text-white">Contact Us</h2>
-                    <p>295 Research Road, Pretoria Industrial</p>
-                    <p>Email: info@oluhleusuku.co.za</p>
-                    <p>Phone: +27 123 456 789</p>
+
+                    <div class="contact-info-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <strong>Address</strong>
+                            <p>295 Research Road, Pretoria Industrial</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@oluhleusuku.co.za</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+27 62 980 6497</p>
+                        </div>
+                    </div>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="social-icons mt-4">
+                        <a href="https://wa.me/+27629806497"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/share/1BxW8jp9dH/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+
                 </div>
 
+                <!-- RIGHT SIDE FORM -->
                 <div class="col-lg-6">
                     <form class="contact-form">
+
                         <input type="text" class="form-control mb-3" placeholder="Your Name" />
+
                         <input type="email" class="form-control mb-3" placeholder="Your Email" />
-                        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
-                        <button class="btn btn-primary w-100">Request a Quote</button>
+
+                        <input type="tel" class="form-control mb-3" placeholder="Your Phone Number" />
+
+                        <textarea class="form-control mb-3" rows="4" placeholder="What do you nedd?"></textarea>
+
+                        <button class="btn btn-primary w-100">I'm Interested</button>
+
                     </form>
                 </div>
 
@@ -353,12 +392,24 @@
         </div>
     </section>
 
+
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
         <div class="container text-center">
-            <p>© 2026 Oluhleusuku Technologies. All rights reserved.</p>
+
+            <p class="footer-main">
+                © 2026 Oluhleusuku Technologies. All rights reserved.
+            </p>
+
+            <p class="footer-disclaimer">
+                Oluhleusuku Technologies is a registered South African company.
+                All services are subject to availability and applicable terms.
+                Data packages may vary based on network coverage and fair usage policies.
+            </p>
+
         </div>
     </footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

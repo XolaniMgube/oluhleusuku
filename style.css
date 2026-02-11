@@ -12,6 +12,13 @@ body {
     font-family: "Inter", system-ui, sans-serif;
     color: var(--text-dark);
     scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .section-title {
@@ -43,6 +50,35 @@ body {
     color: var(--secondary-color);
 }
 
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: none;
+  width: 24px;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.navbar-light .navbar-toggler-icon::before,
+.navbar-light .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.navbar-light .navbar-toggler-icon::before {
+  top: -7px;
+}
+
+.navbar-light .navbar-toggler-icon::after {
+  top: 7px;
+}
 
 
 @media (max-width: 991px) {
@@ -86,12 +122,36 @@ body {
     font-weight: bold;
 }
 
-/* Responsive */
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-btn {
+    padding: 0.9rem 2.5rem;
+    font-weight: 600;
+    min-width: 180px;
+}
+
+
 @media (max-width: 768px) {
+
     .hero-title {
         font-size: 2rem;
     }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
 }
+
 
 /* ================= ABOUT SECTION ================= */
 
@@ -200,6 +260,48 @@ body {
         justify-content: center;
         text-align: left;
     }
+}
+
+
+
+
+/* ================= CATEGORY STRUCTURE ================= */
+
+.data-plans-wrapper {
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 184, 166, 0.05),
+    rgba(11, 44, 77, 0.03)
+  );
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 5rem;
+}
+
+.adhoc-services-wrapper {
+  padding-top: 2rem;
+}
+
+.service-category-eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service-category-title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.service-category-desc {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  color: #6b7280;
 }
 
 
@@ -313,35 +415,171 @@ body {
 }
 
 
-/* ================= DATA SOLUTIONS ================= */
-.data-section {
-    padding: 5rem 0;
-    background: var(--muted-color);
-}
+/* ================= DATA PLANS ================= */
 
 .pricing-card {
-    background: var(--light-color);
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
+  position: relative;
+  background: var(--light-color);
+  padding: 2.25rem 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.pricing-card i {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.pricing-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.pricing-card p {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.pricing-card strong {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Featured Plan */
 .pricing-card.featured {
-    background: var(--primary-color);
-    color: var(--light-color);
+  background: var(--primary-color);
+  color: var(--light-color);
+  transform: scale(1.05);
 }
 
-/* ================= CONTACT ================= */
+.pricing-card.featured i {
+  color: var(--secondary-color);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  border-radius: 50px;
+}
+
+
+/* ================= CONTACT SECTION ================= */
+
 .contact-section {
-    padding: 5rem 0;
-    background: var(--primary-color);
-    color: var(--light-color);
+  padding: 5rem 0;
+  background: var(--primary-color);
+  color:- #f5f7fa; 
+}
+
+.contact-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.contact-info-item i {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-top: 0.2rem;
+}
+
+.contact-info-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #f5f7fa;
+}
+
+.contact-info-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  color: #f5f7fa;
+}
+
+@media (max-width: 768px) {
+  
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* ================= CONTACT FORM ================= */
+
+.contact-form .form-control {
+  border-radius: 10px;
+  border: none;
+  padding: 0.85rem 1rem;
+}
+
+.contact-form .form-control:focus {
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.25);
+}
+
+.contact-form button {
+  padding: 0.85rem;
+  border-radius: 10px;
+  font-weight: 500;
 }
 
 /* ================= FOOTER ================= */
+
 .footer {
-    padding: 1.5rem 0;
-    background: #081f36;
-    color: var(--light-color);
-    font-size: 0.85rem;
+  padding: 2rem 0;
+  background: #081f36;
+  color: var(--light-color);
+  font-size: 0.85rem;
+}
+
+.footer-main {
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.footer-disclaimer {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  max-width: 720px;
+  margin: 0 auto;
 }
