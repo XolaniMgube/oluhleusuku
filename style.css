@@ -83,7 +83,7 @@ body {
 
 @media (max-width: 991px) {
     .navbar-collapse {
-        background: rgba(11, 44, 77, 0.95);
+        /* background: rgba(11, 44, 77, 0.95); */
         padding: 1rem;
         border-radius: 12px;
         margin-top: 0.5rem;
